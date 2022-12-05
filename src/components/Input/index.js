@@ -1,12 +1,13 @@
-import React from 'react'
-import { InputContainer } from './styles'
+import React from "react";
+import { InputContainer } from "./styles";
 
-const Input = () => {
+const Input = (props) => {
+  const { value } = props;
   return (
     <InputContainer>
-      <input disabled/>
+      <input disabled value={value} />
     </InputContainer>
-  )
-}
+  );
+};
 
-export default Input
+export default Input;
